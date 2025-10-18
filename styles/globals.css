@@ -2,26 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arimo", sans-serif;
+    font-weight: 700;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.h1 {
+    font-size: 24px;
+    text-transform: uppercase;
 }
+.h2 {
+    font-size: 24px;
+}
+.h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+p,
+.body {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 110%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
